@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureChaT</title>
+    <link rel="stylesheet" href="webapp.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <nav >
+      <div style="width: 30%;">
+      <strong><H3>SecureChaT</H3></strong>
+      </div>
+      <div style="width: 30%; padding-top: 10px;">
+      <a href="src\signup.html">Signup</a>&nbsp;&nbsp;
+      <a href="src\signin.html">SignIn</a>&nbsp;&nbsp;
+      <a href="">Signoff</a> 
+      </div>
+      <div  style="display: flex; flex-direction: row; width: 40%;">
+        <input id="searchbar" style="width: 80%; padding-top: 15px; height: 15px;" type="text" placeholder="Search Person" >
+        <button id="backup" style="width: 15%; margin-left: 3px;" type="submit"><strong>Restore From Backup</strong></button>  
+      </div>
+    </nav>
+    <div className="header" style="display: flex;flex-direction: row;">
+      <div style="width: 30%;  border: 1pt;
+      border-color: aliceblue;
+      border-style: solid;"><strong><h3>ChatList</h3></strong></div>
+      <div style="width: 70%; border: 1pt;
+      border-color: aliceblue;
+      border-style: solid;"><h3 id="Name_Chats">Name</h3></div>
+    </div>
+
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+    <div style="display:flex;flex-direction:row;align-items: flex-end;padding: 20px;padding-bottom: 0px;">
+      <div style="width: 30%;"><a href="">About us</a></div>
+      <div style="width: 70%;">
+      <form  name="message_box" action="" method="post">
+        <input style="width: 80%; height: 25px;padding-bottom: 0px;" type="text">
+        <button style="width: 5%;height: 25px;" type="submit"><strong>=>>></strong></button>
+        <button style="width: 8%;height: 25px;"><strong>secure</strong></button>
+      </form>
+      </div>
+    </div>
+
+  </body>
+</html>
